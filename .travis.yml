@@ -9,5 +9,9 @@ addons:
     token:
       secure: SONAR_TOKEN
 
-scripts:
-  - sonnar-scanner
+script:
+- sonar-scanner
+
+cache:
+  directories:
+  - '$HOME/.sonar/cache'
