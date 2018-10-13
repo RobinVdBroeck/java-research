@@ -9,6 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <url>https://github.com/RobinVdBroeck/java-research</url>
 
+    <ciManagement>
+        <system>Travis</system>
+        <url>https://travis-ci.com/RobinVdBroeck/java-research</url>
+    </ciManagement>
+
     <build>
         <plugins>
             <plugin>
