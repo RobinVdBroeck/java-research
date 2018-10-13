@@ -1,0 +1,13 @@
+language: java
+
+jdk:
+  - openjdk11
+
+addons:
+  sonarcloud:
+    organization: "robinvdbroeck-github" # the key of the org you chose at step #3
+    token:
+      secure: SONAR_TOKEN
+
+scripts:
+  - sonnar-scanner
