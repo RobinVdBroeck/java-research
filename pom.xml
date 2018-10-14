@@ -8,11 +8,19 @@
     <artifactId>java-research</artifactId>
     <version>1.0-SNAPSHOT</version>
     <url>https://github.com/RobinVdBroeck/java-research</url>
+    <packaging>pom</packaging>
 
     <ciManagement>
         <system>Travis</system>
         <url>https://travis-ci.com/RobinVdBroeck/java-research</url>
     </ciManagement>
+
+    <modules>
+        <module>netty-tutorials</module>
+        <module>chat-server</module>
+        <module>chat-client</module>
+    </modules>
+
 
     <build>
         <plugins>
@@ -28,18 +36,10 @@
         </plugins>
     </build>
 
+
     <scm>
         <connection>scm:git:git@github.com:RobinVdBroeck/java-research.git</connection>
         <developerConnection>scm:git:git@github.com:RobinVdBroeck/java-research.git</developerConnection>
         <url>https://github.com/RobinVdBroeck/java-research</url>
     </scm>
-
-
-    <dependencies>
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>4.1.30.Final</version>
-        </dependency>
-    </dependencies>
 </project>
